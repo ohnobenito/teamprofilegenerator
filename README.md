@@ -1,4 +1,4 @@
-# **Template Engine**
+# **Team Profile Generator**
 
 ## Description 
 A CLI Application that takes user input and generates an HTML page for a software engineering team. This application prompts the user for information about the team's manager, engineers, and interns. The application then gives each employee a small profile on the page with their name, id, and email, as well as different information depending on the role they play on the team.
