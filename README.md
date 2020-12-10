@@ -3,7 +3,7 @@
 ## Description 
 A CLI Application that takes user input and generates an HTML page for a software engineering team. This application prompts the user for information about the team's manager, engineers, and interns. The application then gives each employee a small profile on the page with their name, id, and email, as well as different information depending on the role they play on the team.
 
-Links to [GitHub Repo](https://www.github.com/ohnobenito/templateengine) and [Demo Video](https://drive.google.com/file/d/1VZzIqpUK81-9nr9UazTokRG_fT-NcTo1/view?usp=sharing)
+Links to [GitHub Repo](https://www.github.com/ohnobenito/teamprofilegenerator) and [Demo Video](https://drive.google.com/file/d/1VZzIqpUK81-9nr9UazTokRG_fT-NcTo1/view?usp=sharing)
 
 ![Badge:](https://img.shields.io/badge/License-mit-brightgreen)
 
