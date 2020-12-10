@@ -3,7 +3,7 @@
 ## Description 
 A software engineering team generator command line application. This application prompts the user for information about the team's manager and as many team members needed.
 
-Links to [GitHub Repo](https://www.github.com/ohnobenito/templateengine) and [Demo Video]()
+Links to [GitHub Repo](https://www.github.com/ohnobenito/templateengine) and [Demo Video](https://drive.google.com/file/d/1VZzIqpUK81-9nr9UazTokRG_fT-NcTo1/view?usp=sharing)
 
 ![Badge:](https://img.shields.io/badge/License-mit-brightgreen)
 
