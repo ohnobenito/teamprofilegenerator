@@ -89,7 +89,32 @@ function generateManager(employee) {
         console.log(err);
       });
 }
-
+// FUNCTION TO ADD ENGINEER
+function generateEngineer(employee) {
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "gitHub",
+            message: "What is the engineer's GitHub username?"
+        },
+        {
+            type: "list",
+            name: "addmore",
+            message: "Would you like to add another employee?",
+            choices: ["Yes", "No"]
+        }
+    ]).then(function (answers) {
+        let engineer = new Engineer(employee.name, employee.id, employee.email, answers.gitHub);
+        createTeamRoster.push(engineer);
+        if (answers.addmore === "Yes") {
+            generateEmployee();
+        } else {
+            generateTeam();
+        }
+    }).catch(function(err) {
+        console.log(err);
+      });
+}
 //CALL GENERATER EMPLOYEE FUNCTION TO START APP
 generateEmployee();
 // After the user has input all employees desired, call the `render` function (required
