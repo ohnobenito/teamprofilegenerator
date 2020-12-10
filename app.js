@@ -143,6 +143,11 @@ function generateIntern(employee) {
         console.log(err);
       });
 }
+//FUNCTION TO WRITE HTML FILE TO OUTPUT FOLDER, BY USING THE HTML BLOCKS RENDERED WITH THE TEAMROSTER ARRAY
+function generateTeam() {
+    const makeit = render(createTeamRoster);
+    fs.writeFile(outputPath, makeit, {}, () => console.log("Thanks, your page has been generated"));
+}
 //CALL GENERATER EMPLOYEE FUNCTION TO START APP
 generateEmployee();
 // After the user has input all employees desired, call the `render` function (required
