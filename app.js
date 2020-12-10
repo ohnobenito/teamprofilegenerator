@@ -61,6 +61,34 @@ function generateEmployee() {
        console.log(err);
      });
 }
+//FUNCTION TO ASK MANAGER SPECIFIC QUESTION
+function generateManager(employee) {
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "officeNumber",
+            message: "What is the manager's office number?"
+        },
+        {
+            type: "list",
+            name: "addmore",
+            message: "Would you like to add another employee?",
+            choices: ["Yes", "No"]
+        }
+    ]).then(function (answers) {
+        let manager = new Manager(employee.name, employee.id, employee.email, answers.officeNumber);
+        createTeamRoster.push(manager);
+        if (answers.addmore === "Yes") {
+            generateEmployee();
+        } else {
+            generateTeam();
+        }
+        
+
+    }).catch(function(err) {
+        console.log(err);
+      });
+}
 
 //CALL GENERATER EMPLOYEE FUNCTION TO START APP
 generateEmployee();
