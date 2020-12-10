@@ -115,6 +115,34 @@ function generateEngineer(employee) {
         console.log(err);
       });
 }
+
+//FUNCTION TO ADD INTERN
+function generateIntern(employee) {
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "school",
+            message: "What school is the intern attending?"
+        },
+        {
+            type: "list",
+            name: "addmore",
+            message: "Would you like to add another employee?",
+            choices: ["Yes", "No"]
+        }
+    ]).then(function (answers) {
+        let intern = new Intern(employee.name, employee.id, employee.email, answers.school);
+        createTeamRoster.push(intern);
+        if (answers.addmore === "Yes") {
+            generateEmployee();
+        } else {
+            generateTeam();
+        }
+        
+    }).catch(function(err) {
+        console.log(err);
+      });
+}
 //CALL GENERATER EMPLOYEE FUNCTION TO START APP
 generateEmployee();
 // After the user has input all employees desired, call the `render` function (required
