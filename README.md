@@ -1,7 +1,7 @@
 # **Template Engine**
 
 ## Description 
-A software engineering team generator command line application. This application prompts the user for information about the team's manager and as many team members needed.
+A CLI Application that takes user input and generates an HTML page for a software engineering team. This application prompts the user for information about the team's manager, engineers, and interns. The application then gives each employee a small profile on the page with their name, id, and email, as well as different information depending on the role they play on the team.
 
 Links to [GitHub Repo](https://www.github.com/ohnobenito/templateengine) and [Demo Video](https://drive.google.com/file/d/1VZzIqpUK81-9nr9UazTokRG_fT-NcTo1/view?usp=sharing)
 
@@ -26,10 +26,10 @@ User will need to run a npm install before use by entering in the following on t
 `npm install`
 
 ## Usage 
-How to use: Navigate to the correct folder through command line and enter “node app.js”. Answer the prompts for each member of the team, questions will vary depending on role: Manager, Engineer, Intern. When finished entering all employees and html file will be written in the output folder.
+How to use: Navigate to the directory through command line and enter `node app.js`. Answer the prompts for each member of the team, questions will vary depending on role: Manager, Engineer, Intern. When finished entering all employees an html file will be written in the output folder.
 
 ## License
-This application is covered by the mit license. Full documentation can be found [here](https://choosealicense.com/licenses/mit).
+This application is covered by the MIT license. Full documentation can be found [here](https://choosealicense.com/licenses/mit).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
