@@ -1,0 +1,36 @@
+
+/* CSS HEX 
+--pale-pink: #ffd9daff;
+--black-coral: #495867ff;
+--blue-yonder: #577399ff;
+--brick-red: #c33c54ff;
+--bitter-lemon: #c2e812ff;*/
+
+h1 {
+    font-family: 'Righteous', cursive;
+}
+#mainhead {
+    background-color: #1b998B;
+    color: #ffd9da;
+}
+body {
+    background-color: #ffd9da;
+}
+#managehead {
+    background-color: #ff101f;
+}
+#enginehead {
+    background-color: #3e517A;
+}
+#internhead {
+    background-color: #E6C229;
+}
+.card-body {
+    background-color: whitesmoke;
+}
+.card-title {
+    font-family: 'Righteous', cursive;
+}
+.list-group-item {
+    font-family: 'Righteous', cursive;
+}
